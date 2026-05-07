@@ -1,0 +1,771 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--  // Settings //  -->
+    <sys:String x:Key="ResetLocation">Đặt lại vị trí</sys:String>
+    <sys:String x:Key="Settings">Cài đặt</sys:String>
+    <sys:String x:Key="ImageTranslate">Dịch hình ảnh</sys:String>
+    <sys:String x:Key="Administrator">Quản trị</sys:String>
+
+    <!--  // Navigation //  -->
+    <sys:String x:Key="General">Chung</sys:String>
+    <sys:String x:Key="Services">Dịch vụ</sys:String>
+    <sys:String x:Key="Translate">Dịch</sys:String>
+    <sys:String x:Key="Ocr">OCR</sys:String>
+    <sys:String x:Key="Tts">TTS</sys:String>
+    <sys:String x:Key="Vocabulary">Từ vựng</sys:String>
+    <sys:String x:Key="Standalone">Độc lập</sys:String>
+    <sys:String x:Key="History">Lịch sử</sys:String>
+    <sys:String x:Key="Plugins">Tiện ích</sys:String>
+    <sys:String x:Key="Hotkeys">Phím tắt</sys:String>
+    <sys:String x:Key="Network">Mạng</sys:String>
+    <sys:String x:Key="About">Giới thiệu</sys:String>
+
+    <!--  // General Page //  -->
+    <sys:String x:Key="TimeoutPlaceholder">Thời gian chờ (giây)</sys:String>
+    <sys:String x:Key="SearchFunction">Tìm kiếm chức năng</sys:String>
+    <sys:String x:Key="SearchFunctionToolTip">Ctrl+F để tìm kiếm chức năng</sys:String>
+    <sys:String x:Key="Function">Chức năng</sys:String>
+    <sys:String x:Key="Appearance">Giao diện</sys:String>
+    <sys:String x:Key="AutoTranslateEnabled">Bật dịch tự động</sys:String>
+    <sys:String x:Key="AutoTranslateDisabled">Tắt dịch tự động</sys:String>
+    <sys:String x:Key="General_AutoStartup">Khởi động cùng hệ thống</sys:String>
+    <sys:String x:Key="General_AutoStartupDescription">Tự động khởi chạy phần mềm khi máy tính khởi động.</sys:String>
+    <sys:String x:Key="General_StartMode">Chế độ khởi động</sys:String>
+    <sys:String x:Key="General_StartModeDescription">"SkipUACAdmin" sẽ tạo tác vụ theo lịch để bỏ qua cửa sổ UAC.</sys:String>
+    <sys:String x:Key="General_HideOnStartup">Ẩn cửa sổ khi khởi động hệ thống</sys:String>
+    <sys:String x:Key="General_HideOnStartupDescription">Cửa sổ tìm kiếm sẽ ẩn xuống khay sau khi STranslate khởi động.</sys:String>
+    <sys:String x:Key="General_HideWhenDeactivated">Tự động ẩn cửa sổ khi mất tiêu điểm</sys:String>
+    <sys:String x:Key="General_WindowPosition">Vị trí cửa sổ chính</sys:String>
+    <sys:String x:Key="General_WindowAlign">Vị trí cửa sổ chính trên màn hình</sys:String>
+    <sys:String x:Key="General_MainWindowMaxHeightRatio">Chiều cao tối đa cửa sổ chính (Tỉ lệ màn hình)</sys:String>
+    <sys:String x:Key="General_MainWindowMaxHeightRatioDescription">Điều chỉnh chiều cao tối đa của cửa sổ chính theo tỉ lệ vùng làm việc của màn hình hiện tại (60%-100%).</sys:String>
+    <sys:String x:Key="General_DisableGlobalHotkeys">Tắt phím tắt toàn cục</sys:String>
+    <sys:String x:Key="General_IgnoreHotkeysOnFullscreen">Bỏ qua phím tắt khi ở chế độ toàn màn hình</sys:String>
+    <sys:String x:Key="General_IgnoreHotkeysOnFullscreenDescription">Ưu tiên thấp hơn "Tắt phím tắt toàn cục", thường dùng khi chơi game.</sys:String>
+    <sys:String x:Key="General_LanguageDetector">Trình phát hiện ngôn ngữ</sys:String>
+    <sys:String x:Key="General_LocalDetector">Tỉ lệ ký tự Trung-Anh khi phát hiện cục bộ</sys:String>
+    <sys:String x:Key="General_LocalDetectorDescription">Chỉ áp dụng cho "Phát hiện cục bộ" với tỉ lệ ký tự tiếng Anh trên tổng số ký tự trong văn bản Trung-Anh.</sys:String>
+    <sys:String x:Key="General_DefaultSourceLanguage">Ngôn ngữ nguồn mặc định</sys:String>
+    <sys:String x:Key="General_DefaultSourceLanguageDescription">Sử dụng ngôn ngữ này khi phát hiện tự động thất bại.</sys:String>
+    <sys:String x:Key="General_FirstLanguage">Ngôn ngữ thứ nhất</sys:String>
+    <sys:String x:Key="General_FirstLanguageDescription">Khi ngôn ngữ đích là Tự động và ngôn ngữ nguồn là một ngôn ngữ khác (kể cả ngôn ngữ thứ hai), ngôn ngữ đích sẽ dùng ngôn ngữ thứ nhất.</sys:String>
+    <sys:String x:Key="General_SecondLanguage">Ngôn ngữ thứ hai</sys:String>
+    <sys:String x:Key="General_SecondLanguageDescription">Khi ngôn ngữ đích là Tự động và ngôn ngữ nguồn là ngôn ngữ thứ nhất, ngôn ngữ đích sẽ dùng ngôn ngữ thứ hai.</sys:String>
+    <sys:String x:Key="General_HttpTimeout">Thời gian chờ</sys:String>
+    <sys:String x:Key="General_HttpTimeoutDescription">Thời gian chờ tối đa của yêu cầu mạng (giây).</sys:String>
+    <sys:String x:Key="General_UseClipboardOutput">Dùng clipboard để xuất văn bản</sys:String>
+    <sys:String x:Key="General_UseClipboardOutputDescription">Khi bật, đầu ra dùng clipboard Ctrl+V; khi tắt, dùng mô phỏng nhập bàn phím (mặc định).</sys:String>
+    <sys:String x:Key="General_TranslateOnPaste">Dịch khi dán</sys:String>
+    <sys:String x:Key="General_TranslateOnPasteDescription">Thực hiện dịch ngay khi dán văn bản vào ô nhập liệu.</sys:String>
+    <sys:String x:Key="General_AutoTranslate">Dịch tự động</sys:String>
+    <sys:String x:Key="General_AutoTranslateDescription">Tự động dịch sau khoảng thời gian chờ khi nhập nội dung.</sys:String>
+    <sys:String x:Key="General_InstantTranslate">Dịch tức thì</sys:String>
+    <sys:String x:Key="General_InstantTranslateDescription">Dịch ngay khi xảy ra các hành động sau.</sys:String>
+    <sys:String x:Key="General_AutoTranslateButtonVisible">Hiển thị nút dịch tự động trên giao diện chính</sys:String>
+    <sys:String x:Key="General_AutoTranslateOnPromptChanged">Tự động dịch khi đổi Prompt</sys:String>
+    <sys:String x:Key="General_AutoTranslateOnPromptChangedDescription">Dịch lại ngay sau khi chuyển prompt cho dịch vụ dịch AI.</sys:String>
+    <sys:String x:Key="General_AutoTranslateDelay">Độ trễ dịch tự động</sys:String>
+    <sys:String x:Key="General_AutoTranslateDelayDescription">Thời gian chờ sau khi nhập nội dung, đơn vị: mili giây.</sys:String>
+    <sys:String x:Key="General_LineBreakHandleType">Xử lý ngắt dòng</sys:String>
+    <sys:String x:Key="General_LineBreakHandleTypeDescription" xml:space="preserve">Bao gồm xử lý ngắt dòng cho chọn từ, dịch ảnh chụp, clipboard và OCR im lặng.&#10;"Xoá ngắt dòng thừa" chủ yếu dành cho trích xuất văn bản PDF, loại bỏ ngắt dòng và ngắt câu thừa, nhưng có thể ảnh hưởng tới văn bản không phải PDF.</sys:String>
+    <sys:String x:Key="General_SelectedTextFetchTimeout">Thời gian chờ lấy văn bản</sys:String>
+    <sys:String x:Key="General_SelectedTextFetchTimeoutDescription">Thời gian chờ kiểm tra clipboard mới sau khi mô phỏng sao chép, tính bằng mili giây. Trả về ngay khi văn bản được cập nhật; tăng giá trị này cho ứng dụng PDF cập nhật chậm.</sys:String>
+    <sys:String x:Key="General_SelectedTextFetchTimeoutPlaceholder">500</sys:String>
+    <sys:String x:Key="General_CrosswordFetchFailedFallbackTarget">Phương án dự phòng khi chọn từ thất bại</sys:String>
+    <sys:String x:Key="General_CrosswordFetchFailedFallbackTargetDescription">Khi không lấy được văn bản đã chọn, chọn chuyển sang dịch nhập liệu hoặc chỉ hiện cửa sổ chính.</sys:String>
+    <sys:String x:Key="General_ImageQuality">Chất lượng hình ảnh</sys:String>
+    <sys:String x:Key="General_ImageQualityDescription">Điều chỉnh chất lượng khi xử lý hình ảnh. Dịch vụ OCR trực tuyến có thể giới hạn kích thước ảnh.</sys:String>
+    <sys:String x:Key="General_DoubleClickTrayFunction">Chức năng nháy đúp khay</sys:String>
+    <sys:String x:Key="General_DoubleClickTrayFunctionDescription">Chọn bất kỳ hành động nào ngoài "Không có" sẽ tắt chức năng nháy đơn để bật/tắt cửa sổ chính.</sys:String>
+    <sys:String x:Key="General_Language">Ngôn ngữ</sys:String>
+    <sys:String x:Key="General_ScreenshotTranslate">Dịch ảnh chụp màn hình</sys:String>
+    <sys:String x:Key="General_ImageTranslate">Dịch hình ảnh</sys:String>
+    <sys:String x:Key="General_ShowScreenshotTranslate">Hiển thị dịch ảnh chụp màn hình</sys:String>
+    <sys:String x:Key="General_ShowScreenshotTranslateDescription">Hiển thị nút "Dịch ảnh chụp màn hình" trên giao diện chính. Chụp ảnh, nhận dạng văn bản, đưa vào ô nhập rồi dịch</sys:String>
+    <sys:String x:Key="General_ShowImageTranslate">Hiển thị dịch hình ảnh</sys:String>
+    <sys:String x:Key="General_ShowImageTranslateDescription">Hiển thị nút "Dịch hình ảnh" trên giao diện chính. Chụp ảnh và dịch trực tiếp trên hình</sys:String>
+    <sys:String x:Key="General_ShowScreenshotAuxiliaryLines">Đường phụ trợ khi chụp ảnh</sys:String>
+    <sys:String x:Key="General_ShowScreenshotAuxiliaryLinesDescription">Có hiển thị đường phụ trợ khi chụp ảnh để chọn vùng chính xác hơn không.</sys:String>
+    <sys:String x:Key="General_HideNotifyIcon">Ẩn biểu tượng thông báo</sys:String>
+    <sys:String x:Key="General_ShowScreenshotItemInNotifyIconMenu">Hiển thị Dịch ảnh chụp trong menu khay</sys:String>
+    <sys:String x:Key="General_ShowImageTranslateItemInNotifyIconMenu">Hiển thị Dịch hình ảnh trong menu khay</sys:String>
+    <sys:String x:Key="General_ShowOcrItemInNotifyIconMenu">Hiển thị Nhận dạng văn bản trong menu khay</sys:String>
+    <sys:String x:Key="General_ShowQrCodeItemInNotifyIconMenu">Hiển thị Mã QR trong menu khay</sys:String>
+    <sys:String x:Key="General_ColorTheme">Bảng màu</sys:String>
+    <sys:String x:Key="General_ColorThemeDescription">Chọn bảng màu hiển thị.</sys:String>
+    <sys:String x:Key="General_ColorThemeButtonVisible">Hiển thị nút bảng màu trên giao diện chính</sys:String>
+    <sys:String x:Key="General_HideInputBox">Ẩn ô nhập liệu</sys:String>
+    <sys:String x:Key="General_HideInputBoxDescription">Có ẩn ô nhập liệu hay không.</sys:String>
+    <sys:String x:Key="General_HideInputBoxButtonVisible">Hiển thị nút ẩn ô nhập liệu trên giao diện chính</sys:String>
+    <sys:String x:Key="General_HideLanguageControl">Ẩn điều khiển chọn ngôn ngữ</sys:String>
+    <sys:String x:Key="General_HideLanguageControlDescription">Có ẩn điều khiển chọn ngôn ngữ khi ẩn ô nhập liệu hay không.</sys:String>
+    <sys:String x:Key="General_ShowMouseHook">Hiển thị mouse hook</sys:String>
+    <sys:String x:Key="General_ShowMouseHookDescription">Có hiển thị biểu tượng bật/tắt nhanh chọn từ bằng chuột trên giao diện chính hay không.</sys:String>
+    <sys:String x:Key="General_ShowHistoryNavigation">Hiển thị điều hướng lịch sử</sys:String>
+    <sys:String x:Key="General_ShowHistoryNavigationDescription">Có hiển thị biểu tượng tiến/lùi lịch sử dịch trên giao diện chính hay không.</sys:String>
+    <sys:String x:Key="General_ShowOcrButton">Hiển thị nút OCR</sys:String>
+    <sys:String x:Key="General_ShowOcrButtonDescription">Hiển thị nút OCR trên thanh tiêu đề của giao diện chính.</sys:String>
+    <sys:String x:Key="General_ShowClipboardMonitor">Hiển thị nút giám sát clipboard</sys:String>
+    <sys:String x:Key="General_ShowClipboardMonitorDescription">Hiển thị nút bật/tắt giám sát clipboard trên thanh tiêu đề của giao diện chính.</sys:String>
+    <sys:String x:Key="General_MainHeaderConfig">Bố cục nút trên thanh tiêu đề chính</sys:String>
+    <sys:String x:Key="General_MainHeaderConfigDescription">Hàng trên là Xem trước, hàng dưới là Hồ chứa hành động. Kéo từ Hồ chứa lên Xem trước để hiển thị, kéo ngược lại để ẩn, kéo trong Xem trước để sắp xếp.</sys:String>
+    <sys:String x:Key="General_MainHeaderPreview">Xem trước (Thanh tiêu đề chính)</sys:String>
+    <sys:String x:Key="General_MainHeaderPool">Hồ chứa hành động (Đã ẩn)</sys:String>
+    <sys:String x:Key="General_MainHeaderShowAll">Hiện tất cả</sys:String>
+    <sys:String x:Key="General_MainHeaderHideAll">Ẩn tất cả</sys:String>
+    <sys:String x:Key="General_FontSize">Cỡ chữ</sys:String>
+    <sys:String x:Key="General_FontSizeDescription">Điều chỉnh cỡ chữ cho mọi thành phần trừ menu chuột phải</sys:String>
+    <sys:String x:Key="General_OutputShowingControl">Điều khiển hiển thị đầu ra</sys:String>
+    <sys:String x:Key="General_ShowPascalCase">Hiển thị nút sao chép PascalCase</sys:String>
+    <sys:String x:Key="General_ShowCamelCase">Hiển thị nút sao chép camelCase</sys:String>
+    <sys:String x:Key="General_ShowSnakeCase">Hiển thị nút sao chép snake_case</sys:String>
+    <sys:String x:Key="General_ShowInsert">Hiển thị nút chèn văn bản</sys:String>
+    <sys:String x:Key="General_ShowBackTranslation">Hiển thị nút dịch ngược</sys:String>
+    <sys:String x:Key="General_ShowPrompt">Hiển thị Prompt</sys:String>
+    <sys:String x:Key="General_ShowPromptDescription">Có hiển thị nút chuyển prompt cho dịch vụ dịch AI trên giao diện chính hay không</sys:String>
+    <sys:String x:Key="General_FontFamily">Kiểu chữ</sys:String>
+    <sys:String x:Key="General_HistoryCount">Số lượng lịch sử</sys:String>
+    <sys:String x:Key="General_CopyAfterTranslation">Sao chép sau khi dịch</sys:String>
+    <sys:String x:Key="General_CopyAfterTranslationDescription">Chỉ áp dụng cho dịch vụ ở chế độ "Tự động"</sys:String>
+    <sys:String x:Key="General_CopyAfterTranslationNotAutomatic">Sao chép sau khi dịch cho dịch vụ không phải "Tự động"</sys:String>
+    <sys:String x:Key="General_CopyAfterOcr">Sao chép sau khi OCR</sys:String>
+    <sys:String x:Key="General_CopyAfterOcrDescription">Áp dụng cho mọi tình huống nhận dạng văn bản, tự động sao chép kết quả sau khi OCR.</sys:String>
+    <sys:String x:Key="General_PluginMarketCdnSource">Nguồn CDN cửa hàng tiện ích</sys:String>
+    <sys:String x:Key="General_PluginMarketCdnSourceDescription">Chọn dịch vụ tăng tốc CDN cho dữ liệu cửa hàng tiện ích (GitHub trực tiếp không có độ trễ bộ đệm)</sys:String>
+    <sys:String x:Key="General_CustomCdnUrl">URL CDN tuỳ chỉnh</sys:String>
+    <sys:String x:Key="General_CustomCdnUrlDescription">Nhập mẫu URL CDN tuỳ chỉnh, dùng {author}, {repo}, {branch}, {path} làm chỗ giữ chỗ</sys:String>
+
+    <!--  // PluginMarketCdnSourceType //  -->
+    <sys:String x:Key="PluginMarketCdnSourceTypeJsDelivr">jsDelivr CDN (Khuyến nghị)</sys:String>
+    <sys:String x:Key="PluginMarketCdnSourceTypeGitHubRaw">GitHub Trực tiếp</sys:String>
+    <sys:String x:Key="PluginMarketCdnSourceTypeCustom">Tuỳ chỉnh</sys:String>
+
+    <!--  // PluginDownloadProxyType //  -->
+    <sys:String x:Key="PluginDownloadProxyTypeGitHub">GitHub Trực tiếp</sys:String>
+    <sys:String x:Key="PluginDownloadProxyTypeGhProxyMirror">mirror.ghproxy.com</sys:String>
+    <sys:String x:Key="PluginDownloadProxyTypeGhProxyNet">ghproxy.net</sys:String>
+    <sys:String x:Key="PluginDownloadProxyTypeCustom">Tuỳ chỉnh</sys:String>
+
+    <!--  // Hotkey Page //  -->
+    <sys:String x:Key="GlobalHotkeys">Phím tắt toàn cục</sys:String>
+    <sys:String x:Key="SoftwareHotkeys">Phím tắt phần mềm</sys:String>
+    <sys:String x:Key="Hotkey_OpenSTranslate">Mở STranslate</sys:String>
+    <sys:String x:Key="Hotkey_OpenSTranslateDescription">Phím tắt để hiện/ẩn giao diện chính của STranslate.</sys:String>
+    <sys:String x:Key="Hotkey_InputTranslate">Dịch nhập liệu</sys:String>
+    <sys:String x:Key="Hotkey_InputTranslateDescription">Phím tắt để mở STranslate và xoá nội dung phục vụ dịch nhập liệu.</sys:String>
+    <sys:String x:Key="Hotkey_CrosswordTranslate">Dịch chọn từ</sys:String>
+    <sys:String x:Key="Hotkey_CrosswordTranslateDescription">Phím tắt để dịch văn bản đã chọn bằng chuột.</sys:String>
+    <sys:String x:Key="Hotkey_CrosswordTranslateIsUseCtrlSameC">Sử dụng Ctrl+C+C cho dịch chọn từ?</sys:String>
+    <sys:String x:Key="Hotkey_CrosswordTranslateTraditional">Phím tắt truyền thống</sys:String>
+    <sys:String x:Key="Hotkey_CrosswordTranslateByCtrlSameCDescription">Sau khi chọn văn bản bằng chuột, nhấn nhanh Ctrl+C+C để dịch.</sys:String>
+    <sys:String x:Key="CrosswordTranslateFetchFailed">Không lấy được văn bản đã chọn, chuyển sang dịch nhập liệu.</sys:String>
+    <sys:String x:Key="CrosswordTranslateFetchFailedShowWindow">Không lấy được văn bản đã chọn, chuyển sang hiện cửa sổ chính.</sys:String>
+    <sys:String x:Key="Hotkey_MouseHookTranslate">Dịch theo chuột</sys:String>
+    <sys:String x:Key="Hotkey_MouseHookTranslateDescription">Phím tắt bật/tắt lắng nghe chọn văn bản bằng chuột để kích hoạt dịch.</sys:String>
+    <sys:String x:Key="Hotkey_ReplaceTranslate">Dịch thay thế</sys:String>
+    <sys:String x:Key="Hotkey_ReplaceTranslateDescription">Phím tắt để dịch văn bản đã chọn và thay thế văn bản gốc.</sys:String>
+    <sys:String x:Key="Hotkey_ScreenshotTranslate">Dịch ảnh chụp màn hình</sys:String>
+    <sys:String x:Key="Hotkey_ScreenshotTranslateDescription">Phím tắt để chụp một vùng đã chọn, nhận dạng văn bản và dịch.</sys:String>
+    <sys:String x:Key="Hotkey_ImageTranslate">Dịch hình ảnh</sys:String>
+    <sys:String x:Key="Hotkey_ImageTranslateDescription">Phím tắt để chụp ảnh, chọn vùng, nhận dạng văn bản và dịch trực tiếp trên ảnh.</sys:String>
+    <sys:String x:Key="Hotkey_SilentOcr">OCR im lặng</sys:String>
+    <sys:String x:Key="Hotkey_SilentOcrDescription">Phím tắt để chụp một vùng đã chọn, nhận dạng văn bản và đặt vào clipboard.</sys:String>
+    <sys:String x:Key="Hotkey_SilentTts">TTS im lặng</sys:String>
+    <sys:String x:Key="Hotkey_SilentTtsDescription">Phím tắt để tổng hợp giọng nói cho văn bản tiếng Trung được chọn bằng chuột.</sys:String>
+    <sys:String x:Key="Hotkey_Ocr">OCR</sys:String>
+    <sys:String x:Key="Hotkey_OcrDescription">Phím tắt để mở cửa sổ OCR và nhận dạng văn bản.</sys:String>
+    <sys:String x:Key="Hotkey_ClipboardMonitor">Dịch giám sát clipboard</sys:String>
+    <sys:String x:Key="Hotkey_ClipboardMonitorDescription">Bật/tắt giám sát clipboard. Khi bật, mọi thay đổi clipboard sẽ tự động dịch.</sys:String>
+    <sys:String x:Key="ClipboardMonitorStarted">Đã bắt đầu giám sát clipboard</sys:String>
+    <sys:String x:Key="ClipboardMonitorStopped">Đã dừng giám sát clipboard</sys:String>
+    <sys:String x:Key="ClipboardMonitorButtonTooltip">Dịch giám sát clipboard</sys:String>
+    <sys:String x:Key="Hotkey_CancelOrHide">Huỷ | Ẩn giao diện</sys:String>
+    <sys:String x:Key="Hotkey_CancelOrHideDescription">Huỷ yêu cầu đang chờ | Ẩn giao diện. Áp dụng cho mọi cửa sổ.</sys:String>
+    <sys:String x:Key="Hotkey_MainWindow">Phím tắt cửa sổ chính</sys:String>
+    <sys:String x:Key="Hotkey_Exit">Thoát ứng dụng</sys:String>
+    <sys:String x:Key="Hotkey_ToggleTopmost">Bật/tắt luôn trên cùng</sys:String>
+    <sys:String x:Key="Hotkey_ToggleColorTheme">Chuyển bảng màu</sys:String>
+    <sys:String x:Key="Hotkey_ToggleColorThemeDescription">Lần lượt chuyển qua các bảng màu (Hệ thống/Sáng/Tối).</sys:String>
+    <sys:String x:Key="Hotkey_ShowHideInputBox">Hiện/Ẩn ô nhập liệu</sys:String>
+    <sys:String x:Key="Hotkey_OpenSettings">Mở cài đặt</sys:String>
+    <sys:String x:Key="Hotkey_OpenSettingsDescription">Mở cửa sổ cài đặt khi cửa sổ chính đang mở.</sys:String>
+    <sys:String x:Key="Hotkey_OpenHistory">Mở lịch sử</sys:String>
+    <sys:String x:Key="Hotkey_SaveToVocabulary">Lưu vào từ vựng</sys:String>
+    <sys:String x:Key="Hotkey_HistoryNavigePrevious">Tới lịch sử trước đó</sys:String>
+    <sys:String x:Key="Hotkey_HistoryNavigeNext">Tới lịch sử kế tiếp</sys:String>
+    <sys:String x:Key="Hotkey_AutoTranslate">Dịch tự động</sys:String>
+    <sys:String x:Key="Hotkey_OcrImTransWindow">Phím tắt cửa sổ OCR | Dịch hình ảnh</sys:String>
+    <sys:String x:Key="Hotkey_ReExecuteOcr">Thực hiện lại Nhận dạng văn bản | Dịch hình ảnh</sys:String>
+    <sys:String x:Key="Hotkey_SwitchImage">Chuyển ảnh kết xuất/chú thích</sys:String>
+    <sys:String x:Key="Hotkey_QrCode">Nhận dạng mã QR</sys:String>
+    <sys:String x:Key="Hotkey_QrCodeDescription">Phím tắt này chỉ hỗ trợ trong cửa sổ OCR</sys:String>
+    <sys:String x:Key="Hotkey_IncrementalTranslate">Dịch tăng dần</sys:String>
+    <sys:String x:Key="Hotkey_IncrementalTranslateDescription" xml:space="preserve">Giữ phím tắt và chọn văn bản để liên tục thêm nội dung. Thả chuột để dịch ngay.&#10;Chỉ hỗ trợ phím đơn, không bao gồm Win/Alt/Ctrl/Shift</sys:String>
+    <!--  // Translation Page //  -->
+    <sys:String x:Key="ReplaceService">Dịch thay thế</sys:String>
+    <sys:String x:Key="ImTranService">Dịch ảnh</sys:String>
+    <sys:String x:Key="NoServiceEnabled">Chưa bật dịch vụ nào</sys:String>
+    <sys:String x:Key="SpecialServiceInfo">Kéo dịch vụ từ bên trái vào đây, hoặc nháy chuột phải để chọn và bật.</sys:String>
+    <sys:String x:Key="AsReplaceSvc">Dịch thay thế</sys:String>
+    <sys:String x:Key="AsImTranSvc">Dịch hình ảnh</sys:String>
+    <sys:String x:Key="ImTranOcrService">OCR ảnh</sys:String>
+    <sys:String x:Key="AsImTranOcrSvc">OCR ảnh</sys:String>
+    <sys:String x:Key="TransExecMode">Chế độ dịch</sys:String>
+    <sys:String x:Key="TransExecAutomatic">Thực thi tự động</sys:String>
+    <sys:String x:Key="TransExecManual">Thực thi thủ công</sys:String>
+    <sys:String x:Key="TransExecPinned">Ghim vào vùng ngôn ngữ để thực thi thủ công</sys:String>
+
+    <!--  // Plugin Page //  -->
+    <sys:String x:Key="Market">Cửa hàng</sys:String>
+    <sys:String x:Key="AddPlugin">Cài đặt</sys:String>
+    <sys:String x:Key="PluginName">Tên</sys:String>
+    <sys:String x:Key="PluginAuthor">Tác giả</sys:String>
+    <sys:String x:Key="PluginType">Loại</sys:String>
+    <sys:String x:Key="PluginVersion">Phiên bản</sys:String>
+    <sys:String x:Key="SearchPlugin">Tìm tiện ích</sys:String>
+    <sys:String x:Key="SearchPluginToolTip">Ctrl+F để tìm tiện ích</sys:String>
+    <sys:String x:Key="DropInstallPlugin">Thả ra để cài đặt tiện ích</sys:String>
+
+    <!--  // Plugin Market //  -->
+    <sys:String x:Key="PluginMarketRefresh">Làm mới</sys:String>
+    <sys:String x:Key="PluginMarketDownload">Tải xuống</sys:String>
+    <sys:String x:Key="PluginMarketUpgrade">Nâng cấp</sys:String>
+    <sys:String x:Key="PluginMarketInstalled">Đã cài đặt</sys:String>
+    <sys:String x:Key="PluginMarketDownloading">Đang tải xuống</sys:String>
+    <sys:String x:Key="Back">Quay lại</sys:String>
+    <sys:String x:Key="PluginMarketLoading">Đang tải...</sys:String>
+    <sys:String x:Key="PluginMarketLoadError">Tải thất bại</sys:String>
+    <sys:String x:Key="PluginMarketNoPlugins">Không có tiện ích</sys:String>
+    <sys:String x:Key="PluginMarketCurrentVersion">Phiên bản hiện tại</sys:String>
+    <sys:String x:Key="PluginMarketLatestVersion">Phiên bản mới nhất</sys:String>
+    <sys:String x:Key="PluginDownloadCancelled">Đã huỷ tải xuống</sys:String>
+    <sys:String x:Key="PluginActionDownload">Tải tiện ích</sys:String>
+    <sys:String x:Key="PluginActionUpgrade">Nâng cấp tiện ích</sys:String>
+    <sys:String x:Key="PluginActionInstalled">Đã cài đặt</sys:String>
+    <sys:String x:Key="PluginActionPendingRestart">Chờ khởi động lại</sys:String>
+    <sys:String x:Key="PluginActionWebsite">Trang dự án</sys:String>
+
+    <!--  // Network Page //  -->
+    <sys:String x:Key="Network_EnableExternalCall">Bật gọi bên ngoài</sys:String>
+    <sys:String x:Key="Network_EnableExternalCallDescription">Bật hoặc tắt gọi bên ngoài</sys:String>
+    <sys:String x:Key="Network_ExternalCallPort">Cổng gọi bên ngoài</sys:String>
+    <sys:String x:Key="Network_ExternalCallPortDescription">Cổng gọi bên ngoài, địa chỉ là localhost</sys:String>
+    <sys:String x:Key="Network_ExternalCallPortPlaceholder">Ví dụ: 50020</sys:String>
+    <sys:String x:Key="Network_ExternalCallPortError">Thông báo lỗi gọi bên ngoài</sys:String>
+    <sys:String x:Key="Network_EnableProxy">Bật proxy</sys:String>
+    <sys:String x:Key="Network_EnableProxyDescription">Bật hoặc tắt chức năng proxy</sys:String>
+    <sys:String x:Key="Network_ProxyType">Loại proxy</sys:String>
+    <sys:String x:Key="Network_ProxyTypeDescription">Chọn loại máy chủ proxy</sys:String>
+    <sys:String x:Key="Network_ProxyAddress">Địa chỉ proxy</sys:String>
+    <sys:String x:Key="Network_ProxyAddressPlaceholder">Ví dụ: 127.0.0.1</sys:String>
+    <sys:String x:Key="Network_ProxyPort">Cổng proxy</sys:String>
+    <sys:String x:Key="Network_ProxyPortPlaceholder">Ví dụ: 8080</sys:String>
+    <sys:String x:Key="Network_ProxyUsername">Tên người dùng (Tuỳ chọn)</sys:String>
+    <sys:String x:Key="Network_ProxyUsernameDescription">Nhập tên người dùng nếu máy chủ proxy yêu cầu xác thực</sys:String>
+    <sys:String x:Key="Network_ProxyUsernamePlaceholder">Tên người dùng proxy</sys:String>
+    <sys:String x:Key="Network_ProxyPassword">Mật khẩu (Tuỳ chọn)</sys:String>
+    <sys:String x:Key="Network_ProxyPasswordDescription">Nhập mật khẩu nếu máy chủ proxy yêu cầu xác thực</sys:String>
+    <sys:String x:Key="Network_ProxyPasswordPlaceholder">Mật khẩu proxy</sys:String>
+    <sys:String x:Key="Network_AdvancedSettingsDescription">Cấu hình các tuỳ chọn proxy nâng cao</sys:String>
+    <sys:String x:Key="Network_AdvancedSettings">Cài đặt nâng cao</sys:String>
+    <sys:String x:Key="Network_AdvancedSettingsText">Cấu hình nâng cao</sys:String>
+    <sys:String x:Key="Network_BypassLocalDescription">Không dùng proxy cho địa chỉ cục bộ</sys:String>
+    <sys:String x:Key="Network_BypassLocal">Bỏ qua proxy cho địa chỉ cục bộ</sys:String>
+    <sys:String x:Key="Network_BypassLocalOffContent">Dùng proxy</sys:String>
+    <sys:String x:Key="Network_BypassLocalOnContent">Không dùng proxy</sys:String>
+    <sys:String x:Key="Network_BypassListDescription">Danh sách địa chỉ bỏ qua proxy, ngăn cách bằng dấu chấm phẩy</sys:String>
+    <sys:String x:Key="Network_BypassList">Danh sách bỏ qua</sys:String>
+    <sys:String x:Key="Network_BypassListPlaceholder">Ví dụ: localhost;127.*;10.*;192.168.*</sys:String>
+    <sys:String x:Key="Network_TestConnectionDescription">Kiểm tra cài đặt proxy hiện tại có hoạt động đúng không</sys:String>
+    <sys:String x:Key="Network_TestConnection">Kiểm tra kết nối proxy</sys:String>
+    <sys:String x:Key="Network_TestConnectionButton">Kiểm tra kết nối</sys:String>
+    <sys:String x:Key="Network_TestResult">Kết quả kiểm tra</sys:String>
+    <sys:String x:Key="Network_HttpTimeoutDescription">Đặt thời gian chờ yêu cầu HTTP (giây)</sys:String>
+    <sys:String x:Key="Network_HttpTimeout">Thời gian chờ HTTP</sys:String>
+    <sys:String x:Key="Network_HttpTimeoutPlaceholder">30</sys:String>
+    <sys:String x:Key="Network_ResetSettingsDescription">Đặt lại cài đặt proxy về giá trị mặc định</sys:String>
+    <sys:String x:Key="Network_ResetSettings">Hành động</sys:String>
+    <sys:String x:Key="Network_ResetSettingsButton">Đặt lại cài đặt</sys:String>
+    <sys:String x:Key="Network_HelpDescription">Xem hướng dẫn chi tiết về cài đặt proxy</sys:String>
+    <sys:String x:Key="Network_Help">Trợ giúp</sys:String>
+    <sys:String x:Key="Network_HelpText">Thông tin trợ giúp</sys:String>
+    <sys:String x:Key="Network_HelpProxyType">Giải thích loại proxy</sys:String>
+    <sys:String x:Key="Network_HelpProxyTypeContent" xml:space="preserve">• Proxy hệ thống: Dùng cấu hình proxy của hệ thống&#10;• Proxy HTTP: Máy chủ proxy HTTP tiêu chuẩn&#10;• Proxy Socks5: Hỗ trợ TCP và UDP&#10;• Không dùng proxy: Tắt hoàn toàn chức năng proxy</sys:String>
+    <sys:String x:Key="Network_HelpBypassList">Định dạng danh sách bỏ qua</sys:String>
+    <sys:String x:Key="Network_HelpBypassListContent" xml:space="preserve">Dùng dấu chấm phẩy (;) để ngăn cách nhiều địa chỉ, hỗ trợ ký tự đại diện (*):&#10;localhost;127.*;10.*;192.168.*;*.example.com</sys:String>
+    <sys:String x:Key="Network_HelpEffectiveness">Hiệu lực</sys:String>
+    <sys:String x:Key="Network_HelpEffectivenessContent" xml:space="preserve">Thay đổi cài đặt proxy có hiệu lực sau 2 phút&#10;Áp dụng ngay cần khởi động lại</sys:String>
+
+    <!--  Standalone Page  -->
+    <sys:String x:Key="Standalone_OcrShowAnnotationHeader">Hiển thị chú thích</sys:String>
+    <sys:String x:Key="Standalone_OcrShowAnnotationDescription">Chuyển đổi giữa ảnh gốc và lớp phủ phát hiện văn bản.</sys:String>
+    <sys:String x:Key="Standalone_OcrShowTextControlHeader">Hiển thị bảng văn bản</sys:String>
+    <sys:String x:Key="Standalone_OcrShowTextControlDescription">Hiện hoặc ẩn bảng văn bản bên phải.</sys:String>
+    <sys:String x:Key="Standalone_ImTranShowAnnotatedHeader">Hiển thị chú thích</sys:String>
+    <sys:String x:Key="Standalone_ImTranShowAnnotatedDescription">Chuyển đổi giữa kết quả dịch và lớp phủ phát hiện văn bản.</sys:String>
+    <sys:String x:Key="Standalone_ImTranShowTextControlHeader">Hiển thị bảng văn bản</sys:String>
+    <sys:String x:Key="Standalone_ImTranShowTextControlDescription">Hiện hoặc ẩn bảng văn bản bên phải.</sys:String>
+    <sys:String x:Key="Standalone_LayoutAnalysisHeader">Cài đặt phân tích bố cục</sys:String>
+    <sys:String x:Key="Standalone_LayoutAnalysisDescription">Cấu hình cách gộp các khối văn bản đã nhận dạng.</sys:String>
+    <sys:String x:Key="Standalone_VerticalThresholdHeader">Tỉ lệ ngưỡng kề dọc</sys:String>
+    <sys:String x:Key="Standalone_VerticalThresholdDescription" xml:space="preserve">Điều khiển độ nhạy gộp các khối văn bản kề nhau theo chiều dọc.&#10;0.1–0.3: Chế độ chặt — chỉ gộp các dòng rất gần.&#10;0.5–0.8: Chế độ chuẩn — gộp các dòng trong một đoạn.&#10;1.0–3.0: Chế độ lỏng — gộp các khối văn bản cách xa hơn.&#10;&gt;5.0: Gộp gần như mọi văn bản phân bố theo chiều dọc.</sys:String>
+    <sys:String x:Key="Standalone_HorizontalThresholdHeader">Tỉ lệ ngưỡng kề ngang</sys:String>
+    <sys:String x:Key="Standalone_HorizontalThresholdDescription" xml:space="preserve">Điều khiển độ nhạy gộp các khối văn bản kề nhau theo chiều ngang.&#10;0.1–0.3: Chế độ chặt — chỉ gộp các từ rất gần.&#10;0.5–0.8: Chế độ chuẩn — gộp các từ trên cùng một dòng.&#10;1.0–2.0: Chế độ lỏng — gộp qua các cột.&#10;&gt;5.0: Gộp gần như mọi văn bản phân bố theo chiều ngang.</sys:String>
+    <sys:String x:Key="Standalone_LineSpacingThresholdHeader">Tỉ lệ ngưỡng phát hiện ngắt dòng</sys:String>
+    <sys:String x:Key="Standalone_LineSpacingThresholdDescription" xml:space="preserve">Điều khiển có chèn ngắt dòng khi gộp văn bản hay không.&#10;0.1–0.2: Ngắt dòng chặt — khoảng nhỏ cũng tạo dòng mới.&#10;0.3–0.5: Ngắt dòng chuẩn — phù hợp cho đa số tài liệu.&#10;0.8–1.0: Ngắt dòng lỏng — chỉ khoảng lớn mới tạo dòng mới.&#10;&gt;2.0: Gần như không ngắt dòng — văn bản gộp liên tục.</sys:String>
+    <sys:String x:Key="Standalone_WordSpacingThresholdHeader">Tỉ lệ ngưỡng phát hiện khoảng từ</sys:String>
+    <sys:String x:Key="Standalone_WordSpacingThresholdDescription" xml:space="preserve">Điều khiển có chèn khoảng trắng khi gộp văn bản hay không.&#10;0.1–0.2: Khoảng cách chuẩn.&#10;0.3–0.5: Khoảng cách lỏng.&#10;&gt;1.0: Gần như không chèn khoảng trắng.</sys:String>
+
+    <!--  History Page  -->
+    <sys:String x:Key="Total">Tổng</sys:String>
+    <sys:String x:Key="Item">mục</sys:String>
+    <sys:String x:Key="HistorySearch">Nhập/Ctrl+F để tìm lịch sử</sys:String>
+    <sys:String x:Key="ExportHistory">Xuất lịch sử</sys:String>
+    <sys:String x:Key="BatchDeleteHistory">Xoá hàng loạt lịch sử</sys:String>
+    <sys:String x:Key="BatchDeleteHistoryConfirm">Bạn có chắc muốn xoá {0} bản ghi lịch sử đã chọn không?</sys:String>
+    <sys:String x:Key="BatchDeleteHistoryResult">Hoàn tất xoá hàng loạt: {0} thành công, {1} thất bại</sys:String>
+    <sys:String x:Key="DeleteAllHistoryConfirm">Bạn có chắc muốn xoá toàn bộ {0} bản ghi lịch sử không?</sys:String>
+    <sys:String x:Key="AllHistoryActions">Tất cả hành động</sys:String>
+    <sys:String x:Key="DeleteAllHistory">Xoá tất cả</sys:String>
+    <sys:String x:Key="ExportAllHistory">Xuất tất cả</sys:String>
+    <sys:String x:Key="HistorySelectAllOrClear">Chọn tất cả / Bỏ chọn</sys:String>
+    <sys:String x:Key="NoHistorySelected">Chưa chọn lịch sử nào</sys:String>
+    <sys:String x:Key="ExportSuccess">Xuất thành công</sys:String>
+    <sys:String x:Key="ExportFailed">Xuất thất bại</sys:String>
+
+    <!--  // About Page //  -->
+    <sys:String x:Key="UserDataLocation">Vị trí dữ liệu người dùng</sys:String>
+    <sys:String x:Key="UserDataLocationDescription">Cài đặt người dùng và tiện ích đã cài được lưu trong thư mục dữ liệu người dùng. Vị trí này có thể khác nhau tuỳ chế độ portable.</sys:String>
+    <sys:String x:Key="OpenDirectory">Mở thư mục</sys:String>
+    <sys:String x:Key="PortableModeDescription">Chuyển nơi STranslate lưu dữ liệu người dùng giữa thư mục ứng dụng và hồ sơ roaming. Thay đổi sẽ di chuyển dữ liệu và khởi động lại ứng dụng.</sys:String>
+    <sys:String x:Key="PortableModeStatePortable">Chế độ Portable</sys:String>
+    <sys:String x:Key="PortableModeStateRoaming">Chế độ Roaming</sys:String>
+    <sys:String x:Key="EnablePortableMode">Bật chế độ Portable</sys:String>
+    <sys:String x:Key="DisablePortableMode">Tắt chế độ Portable</sys:String>
+    <sys:String x:Key="ConfirmRestartAndEnablePortableMode">Xác nhận khởi động lại và bật chế độ Portable?</sys:String>
+    <sys:String x:Key="ConfirmRestartAndDisablePortableMode">Xác nhận khởi động lại và tắt chế độ Portable?</sys:String>
+    <sys:String x:Key="PortableModeDisableRoamingConflict">Thư mục dữ liệu Roaming đã tồn tại. Vui lòng xử lý thủ công và thử lại.</sys:String>
+    <sys:String x:Key="PortableModeEnableSuccess">Đã bật chế độ Portable thành công</sys:String>
+    <sys:String x:Key="PortableModeDisableSuccess">Đã tắt chế độ Portable. Đã khôi phục chế độ Roaming.</sys:String>
+    <sys:String x:Key="PortableModeEnableFailed">Bật chế độ Portable thất bại</sys:String>
+    <sys:String x:Key="PortableModeDisableFailed">Tắt chế độ Portable thất bại</sys:String>
+    <sys:String x:Key="PortableModeHostStartFailed">Không thể khởi động thao tác chế độ Portable: {0}</sys:String>
+    <sys:String x:Key="ClearCache">Xoá bộ đệm</sys:String>
+    <sys:String x:Key="ClearLogs">Xoá nhật ký</sys:String>
+    <sys:String x:Key="SettingsDirectory">Thư mục cài đặt</sys:String>
+    <sys:String x:Key="LogsDirectory">Thư mục nhật ký</sys:String>
+    <sys:String x:Key="CacheDirectory">Thư mục bộ đệm</sys:String>
+    <sys:String x:Key="ConfirmDelete">Xác nhận xoá?</sys:String>
+    <sys:String x:Key="ConfirmDeleteService">Bạn có chắc muốn xoá dịch vụ '{0}'?</sys:String>
+    <sys:String x:Key="Close">Đóng</sys:String>
+    <sys:String x:Key="LogLevel">Mức nhật ký</sys:String>
+    <sys:String x:Key="ConfirmRestartAndBackup">Xác nhận khởi động lại và sao lưu cấu hình?</sys:String>
+    <sys:String x:Key="ConfirmRestartAndRestore">Xác nhận khởi động lại và khôi phục cấu hình?</sys:String>
+    <sys:String x:Key="SelectBackupFile">Chọn tệp sao lưu</sys:String>
+    <sys:String x:Key="SelectRestoreFile">Chọn tệp khôi phục</sys:String>
+    <sys:String x:Key="BackupConfigSuccess">Sao lưu cấu hình thành công [{0}]</sys:String>
+    <sys:String x:Key="RestoreConfigSuccess">Khôi phục cấu hình thành công [{0}]</sys:String>
+    <sys:String x:Key="CheckConfigOrLog">Vui lòng kiểm tra cấu hình hoặc xem nhật ký</sys:String>
+    <sys:String x:Key="BackupSuccess">Sao lưu thành công [{0}]</sys:String>
+    <sys:String x:Key="BackupFailed">Sao lưu thất bại, vui lòng kiểm tra nhật ký</sys:String>
+    <sys:String x:Key="DownloadSuccess">Tải xuống thành công</sys:String>
+    <sys:String x:Key="DownloadFailed">Tải xuống thất bại: {0} {1}</sys:String>
+    <sys:String x:Key="DownloadException">Lỗi tải xuống: {0}</sys:String>
+    <sys:String x:Key="DeleteFailed">Xoá thất bại: {0} {1}</sys:String>
+    <sys:String x:Key="RenameFailed">Đổi tên thất bại: {0} {1}</sys:String>
+    <sys:String x:Key="RenameException">Lỗi đổi tên: {0}</sys:String>
+    <sys:String x:Key="BackupMethod">Phương thức sao lưu</sys:String>
+    <sys:String x:Key="BackupMethodDescription">Hỗ trợ sao lưu/khôi phục cục bộ và WebDav. Phần mềm sẽ tự khởi động lại trong quá trình</sys:String>
+    <sys:String x:Key="WebDavAddress">Địa chỉ WebDav</sys:String>
+    <sys:String x:Key="WebDavUsername">Tên người dùng WebDav</sys:String>
+    <sys:String x:Key="WebDavPassword">Mật khẩu WebDav</sys:String>
+    <sys:String x:Key="Backup">Sao lưu</sys:String>
+    <sys:String x:Key="CreateBackup">Tạo bản sao lưu</sys:String>
+    <sys:String x:Key="Restore">Khôi phục</sys:String>
+    <sys:String x:Key="RestoreBackup">Khôi phục bản sao lưu</sys:String>
+    <sys:String x:Key="Version">Phiên bản</sys:String>
+    <sys:String x:Key="CheckUpdate">Kiểm tra cập nhật</sys:String>
+    <sys:String x:Key="General_AutoCheckUpdate">Tự động kiểm tra cập nhật</sys:String>
+    <sys:String x:Key="General_AutoCheckUpdateDescription">Định kỳ kiểm tra phiên bản mới. Nếu có sẽ hiện thông báo trên khay.</sys:String>
+    <sys:String x:Key="NoCheckUpdataInDev">Đã tắt kiểm tra cập nhật ở chế độ phát triển</sys:String>
+    <sys:String x:Key="Donate">Ủng hộ</sys:String>
+    <sys:String x:Key="OfficialWebsite">Trang chủ chính thức</sys:String>
+    <sys:String x:Key="Website">Trang web</sys:String>
+    <sys:String x:Key="Group">Nhóm</sys:String>
+    <sys:String x:Key="Thanks">Cảm ơn</sys:String>
+
+    <!--  // Common //  -->
+    <sys:String x:Key="Add">Thêm</sys:String>
+    <sys:String x:Key="Delete">Xoá</sys:String>
+    <sys:String x:Key="Overwrite">Ghi đè</sys:String>
+    <sys:String x:Key="Save">Lưu</sys:String>
+    <sys:String x:Key="Confirm">Xác nhận</sys:String>
+    <sys:String x:Key="Prompt">Nhắc</sys:String>
+    <sys:String x:Key="Cancel">Huỷ</sys:String>
+    <sys:String x:Key="Copy">Sao chép</sys:String>
+    <sys:String x:Key="Show">Hiện</sys:String>
+    <sys:String x:Key="Hide">Ẩn</sys:String>
+    <sys:String x:Key="Enable">Bật</sys:String>
+    <sys:String x:Key="Disable">Tắt</sys:String>
+    <sys:String x:Key="Open">Mở</sys:String>
+    <sys:String x:Key="Exit">Thoát</sys:String>
+    <sys:String x:Key="Reset">Đặt lại</sys:String>
+    <sys:String x:Key="Retry">Thử lại</sys:String>
+    <sys:String x:Key="Duplicate">Nhân bản</sys:String>
+    <sys:String x:Key="Official">Chính thức</sys:String>
+    <sys:String x:Key="IdentifiedLanguageLabel">Đã nhận dạng</sys:String>
+    <sys:String x:Key="On">Bật</sys:String>
+    <sys:String x:Key="Off">Tắt</sys:String>
+    <sys:String x:Key="QrCode">Mã QR</sys:String>
+
+    <sys:String x:Key="Previous">Trước</sys:String>
+    <sys:String x:Key="Next">Sau</sys:String>
+
+    <sys:String x:Key="Document">Tài liệu</sys:String>
+
+    <!--  // Input Control //  -->
+    <sys:String x:Key="RemoveLineBreak">Xoá ngắt dòng</sys:String>
+    <sys:String x:Key="RemoveSpace">Xoá khoảng trắng</sys:String>
+    <sys:String x:Key="IdentifiedCache">Bộ đệm</sys:String>
+    <sys:String x:Key="IdentifiedUnknown">Không xác định</sys:String>
+    <sys:String x:Key="IdentifiedCacheTooltip">Kết quả nhận dạng từ bộ đệm lịch sử</sys:String>
+    <sys:String x:Key="CopyServiceNotFound">Không tìm thấy dịch vụ {0}</sys:String>
+    <sys:String x:Key="CopiedToClipboard">Đã sao chép kết quả '{0}'</sys:String>
+    <sys:String x:Key="SaveToVocabulary">Lưu vào từ vựng</sys:String>
+
+    <!--  // Language Part //  -->
+    <sys:String x:Key="SwapLanguage">Đổi ngôn ngữ Nguồn-Đích</sys:String>
+    <sys:String x:Key="WaitingForPreviousExecution">Đang xử lý, vui lòng chờ</sys:String>
+    <sys:String x:Key="InputContentIsEmpty">Vui lòng nhập nội dung trước khi thực thi</sys:String>
+
+    <!--  // Output Control //  -->
+    <sys:String x:Key="CopyAsPascalCase">Sao chép kiểu PascalCase</sys:String>
+    <sys:String x:Key="CopyAsCamelCase">Sao chép kiểu camelCase</sys:String>
+    <sys:String x:Key="CopyAsSnakeCase">Sao chép kiểu snake_case</sys:String>
+    <sys:String x:Key="InsertText">Chèn văn bản (giữ Shift để viết thường)</sys:String>
+    <sys:String x:Key="BackTranslation">Dịch ngược</sys:String>
+    <sys:String x:Key="CloseTransBack">Đóng kết quả dịch ngược</sys:String>
+    <sys:String x:Key="SaveToVocabularyWithNote">Lưu vào từ vựng kèm ghi chú</sys:String>
+
+    <sys:String x:Key="ExecuteTranslation">Thực thi dịch</sys:String>
+    <sys:String x:Key="AutoBackTranslation">Tự động dịch ngược</sys:String>
+    <sys:String x:Key="ConfigureService">Cấu hình dịch vụ</sys:String>
+    <sys:String x:Key="CloseService">Đóng dịch vụ</sys:String>
+    <sys:String x:Key="Paraphrase">Định nghĩa</sys:String>
+    <sys:String x:Key="Expand">Mở rộng</sys:String>
+
+    <sys:String x:Key="TranslateCancel">Đã huỷ dịch</sys:String>
+    <sys:String x:Key="TranslateFail">Dịch thất bại</sys:String>
+
+    <!--  // Prompt //  -->
+    <sys:String x:Key="NewPrompt">Prompt mới</sys:String>
+    <sys:String x:Key="NewPromptSuffix">_Mới</sys:String>
+    <sys:String x:Key="EditPrompt">Sửa Prompt</sys:String>
+    <sys:String x:Key="PromptList">Danh sách Prompt</sys:String>
+    <sys:String x:Key="PromptDetails">Chi tiết Prompt</sys:String>
+    <sys:String x:Key="PromptItemManagement">Quản lý mục Prompt:</sys:String>
+    <sys:String x:Key="AddPromptItem">Thêm mục</sys:String>
+    <sys:String x:Key="RemovePromptItem">Xoá mục</sys:String>
+    <sys:String x:Key="Role">Vai trò:</sys:String>
+    <sys:String x:Key="CustomPromptInstructionTitle">💡 Hướng dẫn Prompt tuỳ chỉnh</sys:String>
+    <sys:String x:Key="CustomPromptInstructionDesc1">Tuỳ chỉnh hành vi LLM bằng prompt riêng.</sys:String>
+    <sys:String x:Key="CustomPromptInstructionDesc2">Thay thế biến:</sys:String>
+    <sys:String x:Key="CustomPromptInstructionDesc3">→ ngôn ngữ nguồn</sys:String>
+    <sys:String x:Key="CustomPromptInstructionDesc4">(OCR không khả dụng),</sys:String>
+    <sys:String x:Key="CustomPromptInstructionDesc5">→ ngôn ngữ đích,</sys:String>
+    <sys:String x:Key="CustomPromptInstructionDesc6">→ văn bản cần dịch</sys:String>
+
+    <!--  // Hotkeys //  -->
+    <sys:String x:Key="None">Không có</sys:String>
+    <sys:String x:Key="HotkeyFunctionPrompt">Nhấn phím bạn muốn dùng cho chức năng này.</sys:String>
+    <sys:String x:Key="HotkeySingleKeyMode">Chế độ phím đơn</sys:String>
+    <sys:String x:Key="RegisterHotkeyFailed">Đăng ký phím tắt "{0}" thất bại. Vui lòng thử lại hoặc xem nhật ký để biết chi tiết.</sys:String>
+    <sys:String x:Key="UnregisterHotkeyFailed">Bỏ đăng ký phím tắt "{0}" thất bại. Vui lòng thử lại hoặc xem nhật ký để biết chi tiết.</sys:String>
+    <sys:String x:Key="BindHotkey">Gán phím tắt</sys:String>
+    <sys:String x:Key="HotkeyUnavailable">Phím tắt hiện tại không khả dụng.</sys:String>
+    <sys:String x:Key="HotkeyOverwriteFailed">Bỏ gán phím tắt khi ghi đè thất bại, đã khôi phục.</sys:String>
+    <sys:String x:Key="HotkeyUnavailableUneditable">Phím tắt này dành riêng cho "{0}" và không thể sử dụng. Vui lòng chọn phím tắt khác.</sys:String>
+    <sys:String x:Key="HotkeyUnavailableEditable">Phím tắt này đã được "{0}" sử dụng. Nếu nhấn "Ghi đè", nó sẽ bị xoá khỏi "{0}".</sys:String>
+    <!--  // Enum //  -->
+    <sys:String x:Key="StartModeNormal">Bình thường</sys:String>
+    <sys:String x:Key="StartModeAdmin">Quản trị</sys:String>
+    <sys:String x:Key="StartModeSkipUACAdmin">SkipUACAdmin</sys:String>
+
+    <sys:String x:Key="ColorSchemeDefault">Hệ thống</sys:String>
+    <sys:String x:Key="ColorSchemeLight">Sáng</sys:String>
+    <sys:String x:Key="ColorSchemeDark">Tối</sys:String>
+
+    <sys:String x:Key="LangEnumAuto">Tự động</sys:String>
+    <sys:String x:Key="LangEnumChineseSimplified">Tiếng Trung (Giản thể)</sys:String>
+    <sys:String x:Key="LangEnumChineseTraditional">Tiếng Trung (Phồn thể)</sys:String>
+    <sys:String x:Key="LangEnumCantonese">Tiếng Quảng Đông</sys:String>
+    <sys:String x:Key="LangEnumEnglish">Tiếng Anh</sys:String>
+    <sys:String x:Key="LangEnumJapanese">Tiếng Nhật</sys:String>
+    <sys:String x:Key="LangEnumKorean">Tiếng Hàn</sys:String>
+    <sys:String x:Key="LangEnumFrench">Tiếng Pháp</sys:String>
+    <sys:String x:Key="LangEnumSpanish">Tiếng Tây Ban Nha</sys:String>
+    <sys:String x:Key="LangEnumRussian">Tiếng Nga</sys:String>
+    <sys:String x:Key="LangEnumGerman">Tiếng Đức</sys:String>
+    <sys:String x:Key="LangEnumItalian">Tiếng Ý</sys:String>
+    <sys:String x:Key="LangEnumTurkish">Tiếng Thổ Nhĩ Kỳ</sys:String>
+    <sys:String x:Key="LangEnumPortuguesePortugal">Tiếng Bồ Đào Nha (Bồ Đào Nha)</sys:String>
+    <sys:String x:Key="LangEnumPortugueseBrazil">Tiếng Bồ Đào Nha (Brazil)</sys:String>
+    <sys:String x:Key="LangEnumVietnamese">Tiếng Việt</sys:String>
+    <sys:String x:Key="LangEnumIndonesian">Tiếng Indonesia</sys:String>
+    <sys:String x:Key="LangEnumThai">Tiếng Thái</sys:String>
+    <sys:String x:Key="LangEnumMalay">Tiếng Mã Lai</sys:String>
+    <sys:String x:Key="LangEnumArabic">Tiếng Ả Rập</sys:String>
+    <sys:String x:Key="LangEnumHindi">Tiếng Hindi</sys:String>
+    <sys:String x:Key="LangEnumMongolianCyrillic">Tiếng Mông Cổ (Cyrillic)</sys:String>
+    <sys:String x:Key="LangEnumMongolianTraditional">Tiếng Mông Cổ (Truyền thống)</sys:String>
+    <sys:String x:Key="LangEnumKhmer">Tiếng Khmer</sys:String>
+    <sys:String x:Key="LangEnumNorwegianBokmal">Tiếng Na Uy Bokmål</sys:String>
+    <sys:String x:Key="LangEnumNorwegianNynorsk">Tiếng Na Uy Nynorsk</sys:String>
+    <sys:String x:Key="LangEnumPersian">Tiếng Ba Tư</sys:String>
+    <sys:String x:Key="LangEnumSwedish">Tiếng Thuỵ Điển</sys:String>
+    <sys:String x:Key="LangEnumPolish">Tiếng Ba Lan</sys:String>
+    <sys:String x:Key="LangEnumDutch">Tiếng Hà Lan</sys:String>
+    <sys:String x:Key="LangEnumUkrainian">Tiếng Ukraina</sys:String>
+
+    <sys:String x:Key="LanguageDetectorTypeLocal">Phát hiện cục bộ</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeBaidu">Phát hiện Baidu</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeTencent">Phát hiện Tencent</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeNiutrans">Phát hiện Niutrans</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeBing">Phát hiện Bing</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeYandex">Phát hiện Yandex</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeGoogle">Phát hiện Google</sys:String>
+    <sys:String x:Key="LanguageDetectorTypeMicrosoft">Phát hiện Microsoft</sys:String>
+
+    <sys:String x:Key="LineBreakHandleTypeNone">Không xử lý ngắt dòng</sys:String>
+    <sys:String x:Key="LineBreakHandleTypeRemoveExtraLineBreak">Xoá ngắt dòng thừa</sys:String>
+    <sys:String x:Key="LineBreakHandleTypeRemoveAllLineBreak">Xoá toàn bộ ngắt dòng</sys:String>
+    <sys:String x:Key="LineBreakHandleTypeRemoveAllLineBreakWithoutSpace">Xoá toàn bộ ngắt dòng (không thêm khoảng trắng)</sys:String>
+    <sys:String x:Key="CrosswordFetchFailedFallbackTargetInputTranslate">Dịch nhập liệu</sys:String>
+    <sys:String x:Key="CrosswordFetchFailedFallbackTargetShowWindow">Hiện cửa sổ chính</sys:String>
+
+    <sys:String x:Key="PluginTypeAll">Tất cả tiện ích</sys:String>
+    <sys:String x:Key="PluginTypeTranslate">Dịch</sys:String>
+    <sys:String x:Key="PluginTypeOcr">OCR</sys:String>
+    <sys:String x:Key="PluginTypeTts">TTS</sys:String>
+    <sys:String x:Key="PluginTypeVocabulary">Từ vựng</sys:String>
+
+    <sys:String x:Key="PluginMarketSettings">Cài đặt nâng cao</sys:String>
+    <sys:String x:Key="PluginMarketSettingsChanged">Cài đặt nguồn CDN đã thay đổi. Làm mới danh sách tiện ích ngay?</sys:String>
+    <sys:String x:Key="PluginDownloadProxy">Proxy tải xuống</sys:String>
+    <sys:String x:Key="PluginDownloadProxyDescription">Dùng để tăng tốc tải xuống GitHub Releases</sys:String>
+    <sys:String x:Key="PluginDownloadProxyUrl">URL proxy tuỳ chỉnh</sys:String>
+    <sys:String x:Key="PluginDownloadProxyUrlDescription">Nhập địa chỉ proxy tuỳ chỉnh</sys:String>
+    <sys:String x:Key="PluginDownloadProxyUrlExample">Ví dụ: https://mirror.ghproxy.com/</sys:String>
+
+    <sys:String x:Key="ProxyTypeSystem">Hệ thống</sys:String>
+    <sys:String x:Key="ProxyTypeHttp">HTTP</sys:String>
+    <sys:String x:Key="ProxyTypeSocks5">Socks5</sys:String>
+    <sys:String x:Key="ProxyTypeNone">Không</sys:String>
+
+    <sys:String x:Key="LayoutAnalysisModeMergeAll">Gộp tất cả</sys:String>
+    <sys:String x:Key="LayoutAnalysisModeStrictParagraph">Đoạn nghiêm ngặt</sys:String>
+    <sys:String x:Key="LayoutAnalysisModeStandardDocument">Tài liệu chuẩn</sys:String>
+    <sys:String x:Key="LayoutAnalysisModeColumnDocument">Tài liệu cột</sys:String>
+    <sys:String x:Key="LayoutAnalysisModeNoMerge">Không gộp</sys:String>
+    <sys:String x:Key="LayoutAnalysisModeUserDefined">Tự định nghĩa</sys:String>
+
+    <sys:String x:Key="WindowScreenTypeRememberLastLaunchLocation">Nhớ vị trí lần khởi chạy gần nhất</sys:String>
+    <sys:String x:Key="WindowScreenTypeCursor">Con trỏ</sys:String>
+    <sys:String x:Key="WindowScreenTypeFollowMouse">Theo chuột</sys:String>
+    <sys:String x:Key="WindowScreenTypeFocus">Tiêu điểm</sys:String>
+    <sys:String x:Key="WindowScreenTypePrimary">Chính</sys:String>
+    <sys:String x:Key="WindowScreenTypeCustom">Tuỳ chỉnh</sys:String>
+
+    <sys:String x:Key="WindowAlignTypeCenter">Giữa</sys:String>
+    <sys:String x:Key="WindowAlignTypeCenterTop">Trên giữa</sys:String>
+    <sys:String x:Key="WindowAlignTypeLeftTop">Trên trái</sys:String>
+    <sys:String x:Key="WindowAlignTypeRightTop">Trên phải</sys:String>
+    <sys:String x:Key="WindowAlignTypeCustom">Tuỳ chỉnh</sys:String>
+
+    <sys:String x:Key="LogEventLevelVerbose">Chi tiết</sys:String>
+    <sys:String x:Key="LogEventLevelDebug">Gỡ lỗi</sys:String>
+    <sys:String x:Key="LogEventLevelInformation">Thông tin</sys:String>
+    <sys:String x:Key="LogEventLevelWarning">Cảnh báo</sys:String>
+    <sys:String x:Key="LogEventLevelError">Lỗi</sys:String>
+    <sys:String x:Key="LogEventLevelFatal">Nghiêm trọng</sys:String>
+
+    <sys:String x:Key="OcrResultShowingTypeOriginal">Gốc</sys:String>
+    <sys:String x:Key="OcrResultShowingTypeMarkdown">Markdown</sys:String>
+    <sys:String x:Key="OcrResultShowingTypeLatex">Latex</sys:String>
+
+    <sys:String x:Key="HistoryLimitNotSave">Không lưu</sys:String>
+    <sys:String x:Key="HistoryLimitLimit100">100</sys:String>
+    <sys:String x:Key="HistoryLimitLimit500">500</sys:String>
+    <sys:String x:Key="HistoryLimitLimit1000">1000</sys:String>
+    <sys:String x:Key="HistoryLimitLimit2000">2000</sys:String>
+    <sys:String x:Key="HistoryLimitLimit5000">5000</sys:String>
+    <sys:String x:Key="HistoryLimitUnlimited">Không giới hạn</sys:String>
+
+    <sys:String x:Key="CopyAfterTranslationNoAction">Không hành động</sys:String>
+    <sys:String x:Key="CopyAfterTranslationFirst">Thứ nhất</sys:String>
+    <sys:String x:Key="CopyAfterTranslationSecond">Thứ hai</sys:String>
+    <sys:String x:Key="CopyAfterTranslationThird">Thứ ba</sys:String>
+    <sys:String x:Key="CopyAfterTranslationFourth">Thứ tư</sys:String>
+    <sys:String x:Key="CopyAfterTranslationFifth">Thứ năm</sys:String>
+    <sys:String x:Key="CopyAfterTranslationSixth">Thứ sáu</sys:String>
+    <sys:String x:Key="CopyAfterTranslationSeventh">Thứ bảy</sys:String>
+    <sys:String x:Key="CopyAfterTranslationEighth">Thứ tám</sys:String>
+    <sys:String x:Key="CopyAfterTranslationLast">Cuối</sys:String>
+
+    <sys:String x:Key="BackupTypeLocal">Cục bộ</sys:String>
+    <sys:String x:Key="BackupTypeWebDav">WebDav</sys:String>
+
+    <sys:String x:Key="ImageQualityLow">Thấp</sys:String>
+    <sys:String x:Key="ImageQualityMedium">Trung bình</sys:String>
+    <sys:String x:Key="ImageQualityHigh">Cao</sys:String>
+
+    <sys:String x:Key="DoubleClickTrayFunctionNone">Không có</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionInputTranslate">Dịch nhập liệu</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionScreenshotTranslate">Dịch ảnh chụp</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionOCR">OCR</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionOpenSettingsWindow">Mở cửa sổ cài đặt</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionToggleMouseHook">Bật/tắt mouse hook</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionToggleGlobalHotkeys">Bật/tắt phím tắt toàn cục</sys:String>
+    <sys:String x:Key="DoubleClickTrayFunctionExit">Thoát</sys:String>
+
+    <!--  // Plugins //  -->
+    <sys:String x:Key="UnsupportedSourceLang">Ngôn ngữ nguồn không được hỗ trợ</sys:String>
+    <sys:String x:Key="UnsupportedTargetLang">Ngôn ngữ đích không được hỗ trợ</sys:String>
+    <sys:String x:Key="ValidationSuccess">Xác thực thành công</sys:String>
+    <sys:String x:Key="ValidationFailure">Xác thực thất bại</sys:String>
+    <sys:String x:Key="SelectPluginFile">Chọn tệp tiện ích</sys:String>
+    <sys:String x:Key="PluginInstallFailed">Cài đặt tiện ích thất bại</sys:String>
+    <sys:String x:Key="PluginInstallSuccess">Cài đặt tiện ích thành công</sys:String>
+    <sys:String x:Key="PluginDeleteConfirm" xml:space="preserve">Tác giả: {0}&#10;Phiên bản: {1}&#10;Bạn có chắc muốn xoá tiện ích "{2}"?</sys:String>
+    <sys:String x:Key="PluginDeleteFailed">Xoá tiện ích thất bại</sys:String>
+    <sys:String x:Key="PluginDeleteForRestart">Tiện ích đã được đánh dấu xoá. Khởi động lại để có hiệu lực.</sys:String>
+    <sys:String x:Key="Ok">OK</sys:String>
+    <sys:String x:Key="PluginUpgrade">Nâng cấp tiện ích</sys:String>
+    <sys:String x:Key="PluginUpgradeConfirm">Tiện ích {0} đã được cài đặt phiên bản {1}. Nâng cấp?</sys:String>
+    <sys:String x:Key="PluginUpgradeSuccess">Nâng cấp tiện ích đã sẵn sàng, sẽ có hiệu lực sau khi khởi động lại</sys:String>
+    <sys:String x:Key="PluginUpgradeFailed">Nâng cấp tiện ích thất bại</sys:String>
+    <sys:String x:Key="RestartNow">Khởi động lại ngay</sys:String>
+    <sys:String x:Key="RestartLater">Khởi động lại sau</sys:String>
+    <sys:String x:Key="PendingRestart">Chờ khởi động lại</sys:String>
+    <sys:String x:Key="BatchOperation">Thao tác hàng loạt</sys:String>
+    <sys:String x:Key="DeleteSelected">Xoá đã chọn</sys:String>
+    <sys:String x:Key="NoPluginSelected">Chưa chọn tiện ích nào</sys:String>
+    <sys:String x:Key="BatchDeletePluginConfirm">Đã chọn {0} tiện ích, xác nhận xoá?</sys:String>
+
+    <!--  // Detect //  -->
+    <sys:String x:Key="BaiduDetectError">Lỗi phát hiện Baidu</sys:String>
+    <sys:String x:Key="TencentDetectError">Lỗi phát hiện Tencent</sys:String>
+    <sys:String x:Key="NiutransDetectError">Lỗi phát hiện Niutrans</sys:String>
+    <sys:String x:Key="BingDetectError">Lỗi phát hiện Bing</sys:String>
+    <sys:String x:Key="YandexDetectError">Lỗi phát hiện Yandex</sys:String>
+    <sys:String x:Key="GoogleDetectError">Lỗi phát hiện Google</sys:String>
+    <sys:String x:Key="MicrosoftDetectError">Lỗi phát hiện Microsoft</sys:String>
+
+    <!--  // Services //  -->
+    <sys:String x:Key="FilterService">Lọc dịch vụ</sys:String>
+    <sys:String x:Key="SearchService">Tìm dịch vụ</sys:String>
+    <sys:String x:Key="SearchServiceTooltip">Ctrl+F để tìm dịch vụ</sys:String>
+    <sys:String x:Key="BuiltIn">Tích hợp sẵn</sys:String>
+    <sys:String x:Key="PreInstall">Cài đặt sẵn</sys:String>
+    <sys:String x:Key="Extend">Mở rộng</sys:String>
+
+    <!--  // Dictionary //  -->
+    <sys:String x:Key="PlayPronunciation">Phát âm</sys:String>
+    <sys:String x:Key="Plural">Số nhiều</sys:String>
+    <sys:String x:Key="PastTense">Quá khứ</sys:String>
+    <sys:String x:Key="PastParticiple">Quá khứ phân từ</sys:String>
+    <sys:String x:Key="PresentParticiple">Hiện tại phân từ</sys:String>
+    <sys:String x:Key="ThirdPersonSingular">Ngôi thứ ba số ít</sys:String>
+    <sys:String x:Key="Comparative">So sánh hơn</sys:String>
+    <sys:String x:Key="Superlative">So sánh nhất</sys:String>
+    <sys:String x:Key="Tag">Thẻ</sys:String>
+
+    <!--  // OCR Window //  -->
+    <sys:String x:Key="SelectAll">Chọn tất cả</sys:String>
+    <sys:String x:Key="ImportFromClipboard">Nhập từ clipboard</sys:String>
+    <sys:String x:Key="ImportFromFile">Nhập từ tệp</sys:String>
+    <sys:String x:Key="SaveAs">Lưu thành</sys:String>
+    <sys:String x:Key="ShowHideAnnotation">Hiện/Ẩn chú thích</sys:String>
+    <sys:String x:Key="FitToWindow">Vừa cửa sổ</sys:String>
+    <sys:String x:Key="ActualSize">Kích thước thật</sys:String>
+    <sys:String x:Key="ShowText">Hiện văn bản</sys:String>
+    <sys:String x:Key="HideText">Ẩn văn bản</sys:String>
+    <sys:String x:Key="Recognize">Nhận dạng</sys:String>
+    <sys:String x:Key="ReOcr">Chụp lại để OCR</sys:String>
+    <sys:String x:Key="ReImTransOcr">Chụp lại để dịch hình ảnh</sys:String>
+    <sys:String x:Key="ReOcrKeepWindow">Giữ ảnh chụp cửa sổ</sys:String>
+    <sys:String x:Key="RecognizeQrCode">Nhận dạng mã QR</sys:String>
+    <sys:String x:Key="NoQrCodeFound">Không tìm thấy mã QR</sys:String>
+    <sys:String x:Key="NoLocationInfoTitle">Không có thông tin vị trí</sys:String>
+    <sys:String x:Key="NoLocationInfoMessage">Không thể chú thích hoặc chọn văn bản trên ảnh.</sys:String>
+    <sys:String x:Key="NoLocationInfoMessageForImTrans">Không thể chú thích và hiển thị kết quả dịch trên ảnh.</sys:String>
+    <sys:String x:Key="OcrSettingsToolTip" xml:space="preserve">Nháy trái -> Cài đặt cửa sổ độc lập&#10;Ctrl+Nháy trái -> Cài đặt nhận dạng văn bản</sys:String>
+
+    <sys:String x:Key="RecognizeLanguage">Ngôn ngữ nhận dạng</sys:String>
+    <sys:String x:Key="TranslateLanguage">Ngôn ngữ dịch</sys:String>
+    <sys:String x:Key="ImTranSettingsToolTip" xml:space="preserve">Nháy trái -> Cài đặt cửa sổ độc lập&#10;Ctrl+Nháy trái -> Cài đặt nhận dạng văn bản&#10;Alt+Nháy trái -> Cài đặt dịch văn bản</sys:String>
+
+    <!--  // Snackbar Messages //  -->
+    <sys:String x:Key="CopySuccess">Sao chép thành công</sys:String>
+    <sys:String x:Key="CopyFailed">Sao chép thất bại</sys:String>
+    <sys:String x:Key="NoCopyContent">Không có nội dung để sao chép</sys:String>
+    <sys:String x:Key="SaveSuccess">Đã lưu thành công</sys:String>
+    <sys:String x:Key="SaveFailed">Lưu thất bại</sys:String>
+    <sys:String x:Key="NoImageToSave">Không có ảnh để lưu</sys:String>
+    <sys:String x:Key="NoImageInClipboard">Không có ảnh trong clipboard</sys:String>
+    <sys:String x:Key="OperationSuccess">Thao tác thành công</sys:String>
+    <sys:String x:Key="OperationFailed">Thao tác thất bại</sys:String>
+    <sys:String x:Key="OcrFailed">OCR thất bại</sys:String>
+    <sys:String x:Key="TtsFailed">TTS thất bại</sys:String>
+    <sys:String x:Key="TtsCancelled">Đã huỷ đọc</sys:String>
+    <sys:String x:Key="TtsServiceNotFound">Chưa cấu hình dịch vụ TTS, vui lòng vào "Cài đặt-Dịch vụ-TTS" để cấu hình</sys:String>
+    <sys:String x:Key="ImtransFailed">Dịch hình ảnh thất bại</sys:String>
+    <sys:String x:Key="NoTranslateService">Không tìm thấy dịch vụ dịch khả dụng</sys:String>
+    <sys:String x:Key="NavigateFailed">Đã ở cuối</sys:String>
+    <sys:String x:Key="NoValidPluginFile">Không có tệp SPKG</sys:String>
+
+    <!--  // Processing Messages //  -->
+    <sys:String x:Key="RecognizingImageText">Đang nhận dạng văn bản trong ảnh...</sys:String>
+    <sys:String x:Key="TranslatingText">Đang dịch văn bản...</sys:String>
+
+    <!--  // For Plugins //  -->
+    <sys:String x:Key="PluginTranslateAutoBackTranslation">Dịch ngược</sys:String>
+    <sys:String x:Key="PluginTranslateAutoBackTranslationDescription">Tự động thực hiện dịch ngược sau khi dịch</sys:String>
+    <sys:String x:Key="PluginTranslateValidate">Xác thực</sys:String>
+    <sys:String x:Key="PluginTranslateValidateDescription">Kiểm tra kết nối API và cấu hình có đúng không</sys:String>
+
+    <!--  // Updater Service //  -->
+    <sys:String x:Key="UpdateCheck">Kiểm tra cập nhật</sys:String>
+    <sys:String x:Key="CheckingForUpdates">Đang kiểm tra cập nhật...</sys:String>
+    <sys:String x:Key="NoUpdateInfoFound">Không tìm thấy thông tin cập nhật.</sys:String>
+    <sys:String x:Key="AlreadyLatestVersion">Bạn đang dùng phiên bản mới nhất.</sys:String>
+    <sys:String x:Key="UpdateAvailable">Có bản cập nhật</sys:String>
+    <sys:String x:Key="UpdateOpenAboutButton">Tới cập nhật</sys:String>
+    <sys:String x:Key="UpdateAvailableTrayMessage">Đã có phiên bản mới {0}. Nhấn nút để mở Cài đặt-Giới thiệu và cập nhật.</sys:String>
+    <sys:String x:Key="NewVersionFound">Đã có phiên bản mới {0}. Tải xuống?</sys:String>
+    <sys:String x:Key="PortableDataMoveError">STranslate không thể di chuyển dữ liệu hồ sơ người dùng sang phiên bản cập nhật mới.&#10;Vui lòng tự di chuyển thư mục dữ liệu hồ sơ từ {0} sang {1}</sys:String>
+    <sys:String x:Key="UpdateReady">Đã sẵn sàng cập nhật</sys:String>
+    <sys:String x:Key="UpdateFailed">Cập nhật thất bại</sys:String>
+    <sys:String x:Key="UpdateFailedMessage">Không thể cập nhật ứng dụng. Vui lòng kiểm tra kết nối.</sys:String>
+    <sys:String x:Key="UpdateChangelogLoading">Đang tải ghi chú phát hành...</sys:String>
+    <sys:String x:Key="UpdateChangelogLoadFailedMarkdown">Tải ghi chú phát hành thất bại. Bạn có thể [mở changelog đầy đủ tại đây]({0}).</sys:String>
+    <sys:String x:Key="NewVersionTips">Đã có phiên bản mới {0}, bạn có muốn khởi động lại STranslate để dùng bản cập nhật không?</sys:String>
+
+    <!--  // LLM Service Configurations for plugins //  -->
+    <sys:String x:Key="Url">Endpoint API</sys:String>
+    <sys:String x:Key="Url_Description">Dùng '#' ở cuối sẽ buộc dùng đúng địa chỉ đã nhập.</sys:String>
+    <sys:String x:Key="Url_ToolTip">URL đầy đủ cho yêu cầu cuối</sys:String>
+    <sys:String x:Key="ApiKey">Khoá API</sys:String>
+    <sys:String x:Key="ApiKey_Suggestion">Vui lòng nhập khoá API</sys:String>
+    <sys:String x:Key="Model">Chọn mô hình</sys:String>
+    <sys:String x:Key="Prompt_Header">Cấu hình Prompt</sys:String>
+    <sys:String x:Key="Prompt_Description">Chọn hoặc sửa mẫu prompt dùng để dịch</sys:String>
+    <sys:String x:Key="Prompt_Placeholder">Chọn mẫu prompt</sys:String>
+    <sys:String x:Key="EditPrompt_ToolTip">Sửa Prompt</sys:String>
+    <sys:String x:Key="EditPrompt_Content">Sửa</sys:String>
+    <sys:String x:Key="Temperature">Điều khiển Temperature</sys:String>
+    <sys:String x:Key="Temperature_Description">Kiểm soát độ ngẫu nhiên của đầu ra mô hình</sys:String>
+</ResourceDictionary>

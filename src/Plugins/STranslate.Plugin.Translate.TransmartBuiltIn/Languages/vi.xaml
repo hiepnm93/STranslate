@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Translate_Transmart">Trạng thái dịch vụ</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Transmart_Content">Dịch vụ Tencent Transmart chính thức đã ngừng hoạt động. Tiện ích tích hợp này chỉ giữ lại để tương thích và không còn được khuyến nghị.</sys:String>
+
+</ResourceDictionary>

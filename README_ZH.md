@@ -22,7 +22,7 @@
 
 <h1 align="center">STranslate 2.0</h1>
 
-[**English**](./README.md) | **简体中文**
+[**English**](./README.md) | **简体中文** | [**Tiếng Việt**](./README_VI.md)
 
 <p align="center">
   <a href="https://trendshift.io/repositories/15843" target="_blank">
