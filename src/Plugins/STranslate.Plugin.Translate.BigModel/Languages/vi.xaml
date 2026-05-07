@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Translate_BigModel_Thinking">Chế độ suy luận</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_BigModel_Thinking_Description">Kiểm soát việc mô hình có thực hiện suy luận sâu hơn không. Hỗ trợ từ GLM-4.5 trở lên</sys:String>
+
+</ResourceDictionary>

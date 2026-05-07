@@ -1,0 +1,13 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Translate_Microsoft">Giới thiệu</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Microsoft_Content">Tiện ích này cung cấp truy cập miễn phí dịch vụ Microsoft Translator.</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Microsoft_RequestMode">Chế độ yêu cầu</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Microsoft_RequestMode_Description">Mặc định giữ luồng ký truyền thống, EdgeToken dùng luồng uỷ quyền mới; nếu một chế độ thất bại, hãy thử chuyển sang chế độ còn lại.</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Microsoft_RequestMode_Legacy">Mặc định</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Microsoft_RequestMode_Edge">EdgeToken</sys:String>
+
+</ResourceDictionary>

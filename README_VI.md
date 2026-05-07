@@ -22,7 +22,7 @@
 
 <h1 align="center">STranslate 2.0</h1>
 
-**English** | [**简体中文**](./README_ZH.md) | [**Tiếng Việt**](./README_VI.md)
+[**English**](./README.md) | [**简体中文**](./README_ZH.md) | **Tiếng Việt**
 
 <p align="center">
   <a href="https://trendshift.io/repositories/15843" target="_blank">
@@ -34,60 +34,60 @@
   </a>
 </p>
 
-<p align="center">A <strong>ready-to-go</strong> translation and OCR tool developed with WPF.</p>
+<p align="center">Một công cụ dịch và OCR <strong>dùng-được-ngay</strong> được phát triển bằng WPF.</p>
 
 </div>
 
-## Access
+## Truy cập
 
-| Overseas | Domestic |
+| Quốc tế | Nội địa |
 | :--: | :--: |
 | **[Github](https://github.com/STranslate/STranslate)** | **[Gitee](https://gitee.com/zggsong/STranslate)** |
 
-## Installation
+## Cài đặt
 
-Download the latest [Release](https://github.com/STranslate/STranslate/releases) version and extract it to use.
+Tải phiên bản [Release](https://github.com/STranslate/STranslate/releases) mới nhất và giải nén để sử dụng.
 
-## Usage
+## Sử dụng
 
-[Document](https://stranslate.zggsong.com)
+[Tài liệu](https://stranslate.zggsong.com)
 
-## Discussion
+## Thảo luận
 
-If you have questions, please go to [Discussions](https://github.com/STranslate/STranslate/discussions) for discussion.
+Nếu bạn có câu hỏi, vui lòng tới mục [Thảo luận](https://github.com/STranslate/STranslate/discussions) để trao đổi.
 
-> If you want to join the user exchange group, you can scan the QR code below
+> Nếu bạn muốn tham gia nhóm trao đổi người dùng, có thể quét mã QR bên dưới
 
 <img src="./images/telegram_group.jpg" Width="160" />
 
-## Support the project
+## Ủng hộ dự án
 
 <a href="https://jb.gg/OpenSourceSupport"><img src="./images/jb_beam.svg" /></a>
 
-## Donations
+## Quyên góp
 
-If you like it, you can buy the author a cup of coffee.
+Nếu bạn thích, có thể mời tác giả một ly cà phê.
 
-> Thank you to those who rewarded me [Sponsor List](Sponsor.md)
+> Cảm ơn những người đã ủng hộ tôi [Danh sách nhà tài trợ](Sponsor.md)
 
 | WeChat | Alipay |
 | :--: | :--: |
 |![wehcatpay](./images/wechatpay.jpg) | ![alipay](./images/alipay.jpg) |
 
-## Author & Maintainer
+## Tác giả & Người duy trì
 
 **STranslate**
 
 Copyright © [zggsong](https://github.com/zggsong)
 
-- Original author: [zggsong](https://github.com/zggsong)
-- Organization: [STranslate](https://github.com/STranslate)
-- License: [MIT](./LICENSE)
+- Tác giả gốc: [zggsong](https://github.com/zggsong)
+- Tổ chức: [STranslate](https://github.com/STranslate)
+- Giấy phép: [MIT](./LICENSE)
+- Bản dịch tiếng Việt: [hiepnm93](https://github.com/hiepnm93)
 
-> [Website](https://stranslate.zggsong.com) [Blog](https://www.zggsong.com)
+> [Trang web](https://stranslate.zggsong.com) [Blog](https://www.zggsong.com)
 
 
-## Star History
+## Lịch sử Star
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ZGGSONG/STranslate&type=Date)](https://star-history.com/#ZGGSONG/STranslate&Date)
-

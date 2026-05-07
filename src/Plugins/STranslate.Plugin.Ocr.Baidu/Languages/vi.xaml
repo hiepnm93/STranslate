@@ -1,0 +1,13 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Ocr_Baidu_ApiKey">Khoá API</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Ocr_Baidu_SecretKey">Khoá bí mật</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Ocr_Baidu_Action">Chọn phiên bản</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Ocr_Baidu_Action_Description">&quot;Chính xác&quot; là phiên bản độ chính xác cao, &quot;Tổng quát&quot; là phiên bản tiêu chuẩn, và &quot;Cơ bản&quot; là không có thông tin vị trí.</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Ocr_Baidu_Official">Trang chủ chính thức</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Ocr_Baidu_Official_Description">Nhấn liên kết bên dưới để tới trang chủ chính thức để đăng ký và sử dụng.</sys:String>
+
+</ResourceDictionary>
